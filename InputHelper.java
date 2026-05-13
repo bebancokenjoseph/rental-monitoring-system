@@ -133,5 +133,19 @@ public class InputHelper {
             }
             System.out.println("[WARNING] Invalid phone number. Must start with 09 and be 11 digits.");
         }
+        // ==========================================
+// Read a name that contains letters only
+// ==========================================
+public static String getNameOnly(String prompt) {
+    while (true) {
+        System.out.print(prompt);
+        String input = sc.nextLine().trim();
+
+        if (input.matches("[a-zA-Z ]+")) {
+            return input;
+        }
+        System.out.println("[WARNING] Name must contain letters only. No numbers or symbols.");
     }
-}
+        
+    }
+
