@@ -1,7 +1,7 @@
 -- ============================================
 -- RENTAL MONITORING SYSTEM
 -- Database Schema
--- Owner: Member 1 (Database Engineer)
+-- Owner: Bebanco(Database Engineer)
 -- ============================================
 
 -- Create the database
