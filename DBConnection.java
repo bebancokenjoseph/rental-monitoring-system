@@ -1,6 +1,6 @@
 // ============================================
 // DBConnection.java
-// Owner: Member 1 (Database Engineer)
+// Owner: Bebanco (Database Engineer)
 // Purpose: Handles the JDBC connection to MySQL
 // ============================================
 
@@ -10,12 +10,12 @@ import java.sql.SQLException;
 
 public class DBConnection {
 
-    // --- Database credentials ---
+    // Database credentials 
     private static final String URL      = "jdbc:mysql://localhost:3306/rental_db";
-    private static final String USER     = "root";       // Change if needed
-    private static final String PASSWORD = "";           // Change to your MySQL password
+    private static final String USER     = "root";       
+    private static final String PASSWORD = "";           
 
-    // --- Returns a live connection to the database ---
+    // Returns a live connection to the database 
     public static Connection getConnection() throws SQLException {
         try {
             // Load the MySQL JDBC driver
@@ -33,7 +33,7 @@ public class DBConnection {
         }
     }
 
-    // --- Test the connection (optional utility) ---
+    // Test the connection (optional utility) 
     public static void testConnection() {
         System.out.println("Testing database connection...");
         try (Connection conn = getConnection()) {
